@@ -30,7 +30,7 @@ setTimeout(page.click("button[type='submit']"), 1000);
 await page.waitForNavigation();
 
 // Navigate to the selected page
-await page.goto(url);
+page.goto(url);
 
 async function scrapeFunction(){
     //Main system page, capture an element, check whether the link has a video and retrieve the video links, return an array
